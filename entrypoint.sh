@@ -1,4 +1,5 @@
 #!/bin/sh
+set -x
 echo '=================== Install Hugo ==================='
 DOWNLOAD_HUGO_VERSION=${HUGO_VERSION:-0.54.0}
 GITHUB_DEPLOY_REPOSITORY=${GITHUB_REMOTE_REPOSITORY:-$GITHUB_REPOSITORY}
