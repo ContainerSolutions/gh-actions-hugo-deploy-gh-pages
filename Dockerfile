@@ -22,6 +22,10 @@ RUN apk add --no-cache \
         libc6-compat \
         libstdc++
 
+RUN apk add --no-cache \
+        bash
+
+
 COPY entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
